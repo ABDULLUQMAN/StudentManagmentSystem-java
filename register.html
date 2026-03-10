@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<html lang="en">
+<head>
+
+<title>Register</title>
+
+<style>
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: white;
+    padding: 40px;
+    width: 420px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    
+}
+
+label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #4facfe;
+    box-shadow: 0 0 5px rgba(79,172,254,0.5);
+}
+
+.gender-box {
+    display: flex;
+    gap: 15px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #4facfe, #00c6ff);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    transform: scale(1.05);
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<h2>User Registration</h2>
+
+<form action="Register" method="get">
+
+<div class="form-group">
+<label>S_NO</label>
+<input type="number" name="s_no" required>
+</div>
+
+<div class="form-group">
+<label>FullName</label>
+<input type="text" name="fullname" required>
+</div>
+
+<div class="form-group">
+<label>Father_Name</label>
+<input type="text" name="fname" required>
+</div>
+
+<div class="form-group">
+<label>Mother_Name</label>
+<input type="text" name="mname">
+</div>
+
+<div class="form-group">
+<label>Age</label>
+<input type="number" name="age" required>
+</div>
+
+<div class="form-group">
+<label>Gender</label>
+<div class="gender-box">
+<label><input type="radio" name="gender" value="Male" required> Male</label>
+<label><input type="radio" name="gender" value="Female"> Female</label>
+<label><input type="radio" name="gender" value="Other"> Other</label>
+</div>
+</div>
+
+<div class="form-group">
+<label>Email</label>
+<input type="email" name="mail" required>
+</div>
+
+<div class="form-group">
+<label>Phone Number</label>
+<input type="tel" name="phone" required>
+</div>
+
+<div class="form-group">
+<label>Qualification</label>
+<select name="qualification" required>
+<option value="">-- Select --</option>
+<option>B.Tech</option>
+<option>B.Sc</option>
+<option>B.Com</option>
+<option>M.Tech</option>
+<option>MBA</option>
+<option>Other</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Location</label>
+<input type="text" name="location" required>
+</div>
+
+<button type="submit" class="submit-btn">Submit</button>
+
+</form>
+</div>
+
+
+</body>
+</html>
